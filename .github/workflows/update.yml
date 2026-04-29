@@ -1,29 +1,22 @@
-
 name: Update Monitor
-
 on:
   schedule:
-    - cron: "0 0 * * 1-5"   # 평일 UTC 00:00 = KST 09:00
-  workflow_dispatch:          # 수동 실행 버튼
-
+    - cron: "0 0 * * 1-5"
+  workflow_dispatch:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Fetch data & update HTML
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python3 scripts/fetch_data.py
-
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
