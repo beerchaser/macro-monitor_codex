@@ -180,8 +180,8 @@ tr.alt{background:rgba(0,0,0,0.015)}
 <tr id="row-spx">
   <td class="ind">S&amp;P 500<span class="sub">SPX / 200일선 위치</span></td>
   <td class="desc">미국 대형주 500개 시가총액 가중 지수. <b>200일 이동평균선은 중장기 추세의 경계선으로, 이 위에 있어야 상승 추세로 판단.</b> 진입 조건 ③의 직접 판단 기준</td>
-  <td class="val val-ok">7,200.75<br><br></td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/4 종가 · FRED SP500</span></td>
+  <td class="val val-ok">7,259.22<br><br></td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/5 종가 · FRED SP500</span></td>
   <td class="status"><span class="badge badge-warn">주의</span></td>
     <td class="threshold">
     <b>200일선 탈환 + N일 유지 →</b> 진입 조건 ③ 충족. ⚠️ <b>단순 돌파만으로 충족 인정 금지</b><br>
@@ -193,8 +193,8 @@ tr.alt{background:rgba(0,0,0,0.015)}
 <tr class="alt" id="row-vix">
   <td class="ind">VIX<span class="sub">CBOE 공포지수</span></td>
   <td class="desc">S&amp;P 500 옵션 가격에서 역산한 향후 30일 변동성 기대치. <b>"공포지수"로 불리며 시장 불안심리를 수치화.</b> 20 이하가 정상, 30 이상이면 스트레스 국면</td>
-  <td class="val val-ok">16.99</td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/1 종가 · FRED VIXCLS</span></td>
+  <td class="val val-ok">18.29</td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/4 종가 · FRED VIXCLS</span></td>
   <td class="status"><span class="badge badge-warn">주의</span></td>
     <td class="threshold">
     <b>&lt;20 →</b> 리스크온 정상 (현재) / <b>20~30 →</b> 주의 / <b>30~40 →</b> 스트레스<br>
@@ -241,11 +241,11 @@ tr.alt{background:rgba(0,0,0,0.015)}
 <tr id="row-tga">
   <td class="ind">TGA 잔고<span class="sub">재무부 현금 / $억</span></td>
   <td class="desc">재무부가 Fed에 보유한 당좌예금 계좌. <b>잔고가 줄면(드로다운) 재정지출로 시중에 돈이 풀리는 유동성 공급 효과.</b> 반대로 세금 납부 시즌엔 잔고가 쌓이며 유동성 흡수</td>
-  <td class="val val-warn">$857.3B</td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/1 DTS Closing $857.3B · fiscaldata.treasury.gov</span></td>
+  <td class="val val-warn">$880.0B</td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/4 DTS Closing $880.0B · fiscaldata.treasury.gov</span></td>
   <td class="status"><span class="badge badge-warn">주의</span></td>
     <td class="threshold">
-    5/1 DTS Closing $857.3B(전일 $779.5B→+$145B, Tax Day 세수 급증). 4월 말 ~$1,025B peak 예상(QRA). 드로다운 5월 본격화.<br>
+    5/4 DTS Closing $880.0B(전일 $779.5B→+$145B, Tax Day 세수 급증). 4월 말 ~$1,025B peak 예상(QRA). 드로다운 5월 본격화.<br>
     <b>$5,000억 이하 →</b> 드로다운 피크 근접 / <b>TGA peak 확인 후 감소 전환 = 진입 조건 ① 충족</b><br>
     <span class="tag tag-alert">5월 드로다운 시작 후 H.8 은행 지준 증가 병행 확인 필요</span>
   </td>
@@ -254,8 +254,8 @@ tr.alt{background:rgba(0,0,0,0.015)}
 <tr class="alt" id="row-rrp">
   <td class="ind">RRP 잔고<span class="sub">역레포 / $억</span></td>
   <td class="desc">Fed가 MMF 등으로부터 하루짜리로 돈을 빌리는 창구. <b>RRP 잔고 = 시중 유동성 잉여분의 주차장.</b> 잔고가 0에 가까울수록 완충 없이 TGA 변동이 직접 시장에 영향</td>
-  <td class="val val-ok">$0.62B</td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/4 · FRED RRPONTSYD 0.618B</span></td>
+  <td class="val val-ok">$1.12B</td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/5 · FRED RRPONTSYD 1.122B</span></td>
   <td class="status"><span class="badge badge-ok">정상</span></td>
     <td class="threshold">
     RRP 거의 소진 상태 = 시스템 내 유동성 완충 없음<br>
@@ -470,7 +470,7 @@ tr.alt{background:rgba(0,0,0,0.015)}
   <td class="ind">10Y UST<span class="sub">미국채 10년물</span></td>
   <td class="desc">장기 금리의 글로벌 기준점. <b>주식 밸류에이션·모기지·회사채 금리가 모두 여기서 파생되며, Fed 정책 기대와 인플레이션 전망이 동시에 반영됨.</b> 이란전 재정 압력 + JGB 이탈이 상방 요인</td>
   <td class="val val-ok">4.3%</td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/1 종가 · FRED DGS10</span></td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/4 종가 · FRED DGS10</span></td>
   <td class="status"><span class="badge badge-warn">주의</span></td>
     <td class="threshold">
     <b>4.0% 하향 →</b> 채권 랠리·리스크온 / <b>4.5%+ →</b> Term premium 확대·밸류 압박<br>
@@ -558,8 +558,8 @@ tr.alt{background:rgba(0,0,0,0.015)}
 <tr id="row-ig-oas">
   <td class="ind">IG OAS<span class="sub">ICE BofA BAMLC0A0CM / bp</span></td>
   <td class="desc">투자등급(BBB- 이상) 회사채가 국채 대비 추가로 제공하는 금리 프리미엄. <b>IG 스프레드 축소 = 우량 회사채 수요 강함 = 보수적 리스크온 신호. HY와 함께 보면 크레딧 시장 차별화 구조 파악 가능.</b> MMF→IG→HY→주식 순서로 자금 이동 확인</td>
-  <td class="val val-ok">81bp</td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">FRED 5/1 · 0.81% · BAMLC0A0CM</span></td>
+  <td class="val val-ok">80bp</td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">FRED 5/4 · 0.80% · BAMLC0A0CM</span></td>
   <td class="status"><span class="badge badge-ok">정상</span></td>
     <td class="threshold">
     <b>75bp →</b> 역대 최저·과열 / <b>80bp →</b> 현재·타이트 유지 / <b>100bp+ →</b> 크레딧 수요 약화<br>
@@ -573,8 +573,8 @@ tr.alt{background:rgba(0,0,0,0.015)}
 <tr class="alt" id="row-hy-oas">
   <td class="ind">HY OAS<span class="sub">ICE BofA BAMLH0A0HYM2 / bp</span></td>
   <td class="desc">투자부적격(BB 이하) 회사채가 국채 대비 추가로 제공하는 금리 프리미엄. <b>신용위험을 보상하는 값으로, 넓어질수록 기업 부도 우려 증가.</b> 경기침체 6~12개월 선행 지표. IG와 함께 보면 리스크온 강도 측정 가능</td>
-  <td class="val val-warn">277bp</td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">FRED 5/1 · 2.77% · BAMLH0A0HYM2</span></td>
+  <td class="val val-warn">278bp</td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">FRED 5/4 · 2.78% · BAMLH0A0HYM2</span></td>
   <td class="status"><span class="badge badge-ok">정상</span></td>
     <td class="threshold">
     <b>250bp↓ →</b> 역대 최저권·리스크온 강함 / <b>283bp →</b> 현재·고점比 개선 중<br>
@@ -637,8 +637,8 @@ tr.alt{background:rgba(0,0,0,0.015)}
 <tr id="row-sofr">
   <td class="ind">SOFR / IORB<span class="sub">overnight / %</span></td>
   <td class="desc">SOFR = 미국 국채를 담보로 하는 하루짜리 도매 차입 금리. IORB = Fed가 은행 지준금에 지급하는 이자율. <b>SOFR이 IORB보다 높아지면 은행들이 지준보다 시장 차입을 선호할 만큼 유동성이 부족하다는 신호</b></td>
-  <td class="val val-ok">3.64% / 3.65%</td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/1 SOFR 3.64% · FRED 확인</span></td>
+  <td class="val val-ok">3.63% / 3.65%</td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/4 SOFR 3.63% · FRED 확인</span></td>
   <td class="status"><span class="badge badge-ok">정상</span></td>
     <td class="threshold">
     <b>🆕 역전 해소:</b> SOFR 4/17 3.65% = IORB 3.65% → 스프레드 0bp. 이전 4/15 SOFR(3.72%) &gt; IORB(3.65%) +7bp 역전에서 Tax Day 이후 정상화. EFFR 고착 여부 지속 모니터링.<br>
@@ -652,7 +652,7 @@ tr.alt{background:rgba(0,0,0,0.015)}
   <td class="ind">Repo Stress<span class="sub">GCF-SOFR 스프레드</span></td>
   <td class="desc">GCF(일반 담보 금융) 레포와 SOFR의 차이. <b>딜러(대형 증권사)의 밸런스시트가 한계에 달할수록 국채 담보 단기차입 비용이 SOFR 위로 치솟음.</b> 분기말·세금 납부 시즌에 구조적으로 확대</td>
   <td class="val val-ok">284bp</td>
-  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/1 SOFR 3.64% vs IORB 3.65% · 역전 해소</span></td>
+  <td class="verify"><span class="vbadge vbadge-auto">자동확인</span><span class="verify-note">5/4 SOFR 3.63% vs IORB 3.65% · 역전 해소</span></td>
   <td class="status"><span class="badge badge-ok">정상</span></td>
     <td class="threshold">
     <b>SOFR+20bp →</b> 분기말·세금시즌 경색 / <b>SOFR+30bp+ →</b> 딜러 밸런스시트 한계<br>
